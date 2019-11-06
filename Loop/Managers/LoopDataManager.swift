@@ -1163,6 +1163,11 @@ extension LoopDataManager {
             completion(false, nil)
             return
         }
+        guard microBolus >= settings.microbolusesMinimumBolusSize else {
+            logger.debug("Microbolus will not be enacted due to it being lower than the configured minimum bolus size. (\(String(describing: microBolus)) vs \(String(describing: settings.microbolusesMinimumBolusSize)))")
+            completion(false, nil)
+            return
+        }
 
         let recommendation = (amount: microBolus, date: startDate)
         logger.debug("Enact microbolus: \(String(describing: microBolus))")
