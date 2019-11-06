@@ -1165,7 +1165,7 @@ extension LoopDataManager {
         }
 
         let recomendation = (amount: microBolus, date: startDate)
-        logger.debug("Enact microbolus: \(String(describing: recommendedBolus))")
+        logger.debug("Enact microbolus: \(String(describing: microBolus))")
 
         self.delegate?.loopDataManager(self, didRecommendMicroBolus: recomendation) { [weak self] error in
             if let error = error {
