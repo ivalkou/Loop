@@ -1133,8 +1133,8 @@ extension LoopDataManager {
 
         let lowTrend = controlGlucoseQuantity.map { $0 < glucose.quantity } ?? true
 
-        let safityCheck = !(lowTrend && settings.microbolusesSafeMode == .enabled)
-        guard safityCheck else {
+        let safetyCheck = !(lowTrend && settings.microbolusesSafeMode == .enabled)
+        guard safetyCheck else {
             logger.debug("Control glucose is lower then current. Microbolus is not allowed.")
             completion(false, nil)
             return
@@ -1164,10 +1164,10 @@ extension LoopDataManager {
             return
         }
 
-        let recomendation = (amount: microBolus, date: startDate)
+        let recommendation = (amount: microBolus, date: startDate)
         logger.debug("Enact microbolus: \(String(describing: microBolus))")
 
-        self.delegate?.loopDataManager(self, didRecommendMicroBolus: recomendation) { [weak self] error in
+        self.delegate?.loopDataManager(self, didRecommendMicroBolus: recommendation) { [weak self] error in
             if let error = error {
                 self?.logger.debug("Microbolus failed: \(error.localizedDescription)")
                 completion(false, error)
