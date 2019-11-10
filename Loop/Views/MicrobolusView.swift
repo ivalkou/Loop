@@ -114,10 +114,10 @@ struct MicrobolusView: View {
 
             if viewModel.microbolusesWithCOB {
                 Section(footer:
-                    Text("This is the minimum Microbolus size that will be delivered. Only if the Microbolus calculated is equal to or greater than this will a bolus be delivered.")
+                    Text("This is the minimum Microbolus size in units that will be delivered. Only if the Microbolus calculated is equal to or greater than this number of units will a bolus be delivered.")
                 ) {
                     Picker(selection: $viewModel.pickerMinimumBolusSizeIndex, label: Text("Minimum Bolus Size")) {
-                        ForEach(0 ..< viewModel.minimumBolusSizeValues.count) { index in Text(String(format: "%.2f", self.viewModel.minimumBolusSizeValues[index])).tag(index)
+                        ForEach(0 ..< viewModel.minimumBolusSizeValues.count) { index in Text(String(format: "%.2f U", self.viewModel.minimumBolusSizeValues[index])).tag(index)
                         }
                     }
                 }
