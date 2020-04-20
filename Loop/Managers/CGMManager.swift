@@ -11,6 +11,7 @@ import G4ShareSpy
 import ShareClient
 import MockKit
 import NightscoutAPIClient
+import BubbleClient
 
 
 let allCGMManagers: [CGMManager.Type] = [
@@ -19,6 +20,7 @@ let allCGMManagers: [CGMManager.Type] = [
     G4CGMManager.self,
     ShareClientManager.self,
     NightscoutAPIManager.self,
+    BubbleClientManager.self,
     MockCGMManager.self,
 ]
 
