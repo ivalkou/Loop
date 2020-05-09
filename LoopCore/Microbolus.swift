@@ -98,17 +98,18 @@ public extension Microbolus {
         public let recommendedAmount: Double
         public let amount: Double
         public let reason: String?
+        public let roundedUp: Bool
 
         public static func canceled(date: Date, recommended: Double, reason: String) -> Event {
-            Event(date: date, recommendedAmount: recommended, amount: 0, reason: reason)
+            Event(date: date, recommendedAmount: recommended, amount: 0, reason: reason, roundedUp: false)
         }
 
         public static func failed(date: Date, recommended: Double, error: Error) -> Event {
-            Event(date: date, recommendedAmount: recommended, amount: 0, reason: "Failed with error: \(error.localizedDescription)")
+            Event(date: date, recommendedAmount: recommended, amount: 0, reason: "Failed with error: \(error.localizedDescription)", roundedUp: false)
         }
 
-        public static func succeeded(date: Date, recommended: Double, amount: Double) -> Event {
-            Event(date: date, recommendedAmount: recommended, amount: amount, reason: nil)
+        public static func succeeded(date: Date, recommended: Double, amount: Double, roundedUp: Bool) -> Event {
+            Event(date: date, recommendedAmount: recommended, amount: amount, reason: nil, roundedUp: roundedUp)
         }
 
         public var description: String {
@@ -118,7 +119,7 @@ public extension Microbolus {
             percentFormatter.maximumFractionDigits = 2
             percentFormatter.numberStyle = .percent
             let percent = amount/recommendedAmount
-            return "At \(timeFormatter.string(from: date)): enacted \(amount) (\(percentFormatter.string(for: percent) ?? "0 %")) of recommended \(recommendedAmount). " 
+            return "At \(timeFormatter.string(from: date)): enacted \(amount) (\(percentFormatter.string(for: percent) ?? "0 %")) of recommended \(recommendedAmount). \(roundedUp ? "Rounded up to nearest value": "")"
             + (reason ?? "")
         }
 
