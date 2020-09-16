@@ -393,3 +393,74 @@
 /* The label of the workout mode toggle button */
 "Workout Targets" = "Trainings doel waardes";
 
+// FreeAPS strings
+
+"Microboluses" = "Microbolussen";
+
+"Caution! Microboluses have potential to reduce the safety effects of other mitigations like max temp basal rate. Please be careful!\nThe actual size of a microbolus is always limited to the partial application of recommended bolus." = "Opgelet! Microbolussen kunnen mogelijk veiligheidsinstellingen beïnvloeden, zoals de maximale tijdelijke basaalstand. Wees voorzichtig! De toegediende omvang van een microbolus is altijd beperkt tot een deel van de aanbevolen bolus.";
+
+"Enable With Carbs" = "Activeer met koolhydraten";
+
+"Enable Without Carbs" = "Activeer zonder koolhydraten";
+
+"Partial Bolus Application" = "Gedeeltelijke bolustoepassing";
+
+"What part of the recommended bolus will be applied automatically." = "Welk deel van de aanbevolen bolus automatisch zal worden toegediend.";
+
+"Basal Rate Multiplier" = "Basaal snelheid vermenigvuldiger";
+
+"Max basal limit" = "Max basaal limiet";
+
+"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting.\nThis setting is ignored if microboluses are disabled." = "Beperkt de maximale basaal tot een veelvoud van de ingestelde basaal. De waarde kan niet hoger zijn dan de maximale basaal.\nDeze instelling wordt genegeerd als microbolussen zijn uitgeschakeld.";
+
+"Temporary overrides" = "Tijdelijke overrides";
+
+"Disable MB by enabling temporary override" = "MB uitschakelen door tijdelijke override in te schakelen";
+
+"If the override's target range starts at the given value or more" = "Als het tijdelijke doelbereik gelijk of hoger is dan op ingevoerde waarde";
+
+"Other Options" = "Andere instellingen";
+
+"Open bolus screen after carbs on watch" = "Open invoer bolus-menu na invoer van koolhydraten op horloge";
+
+"Minimum Bolus Size" = "Minimale bolus omvang";
+
+"This is the minimum microbolus size in units that will be delivered. Only if the microbolus calculated is equal to or greater than this number of units will a bolus be delivered." = "Dit is de minimale microbolus in eenheden die zal worden toegediend. Alleen als bij de berekende microbolus gelijk of groter is dan dit aantal eenheden, zal een bolus worden toegediend.";
+
+"Disabled" = "Uitgeschakeld";
+
+"Always" = "Altijd";
+
+"With Carbs" = "Met koolhydraten";
+
+"Without Carbs" = "Zonder koolhydraten";
+
+"Export Settings" = "Exporteer instellingen";
+
+"Import Settings" = "Importeer instellingen";
+
+"Manual Temp Basal" = "Handmatige tijdelijke basaal";
+
+"Basal rate (U/h)" = "Basaalstand (E/u)";
+
+"Duration" = "Duur";
+
+"%.0f h %02.0f min" = "%.0f u %02.0f min";
+
+"Cancel Temp Basal" = "Annuleer tijdelijke basaal";
+
+"Set" = "Instellen";
+
+"Safety" = "Veiligheid";
+
+"Allow MBs when the sensor value is invalid" = "Sta MBs toe als de sensor waarde ongeldig is";
+
+"Sometimes you may see an exclamation mark next to the glucose value. In such cases microboluses will not be applied. Turn this setting on if you want to ignore warnings." = "Ingeval van een uitroepteken naast de glucosewaarde, worden microbolussen niet toegepast. Schakel deze instelling in als je waarschuwingen wilt negeren.";
+
+"Other FreeAPS settings" = "Overige FreeAPS instellingen";
+
+"Show required carbs on the app badge" = "Toon vereiste koolhydraten op de app-badge";
+
+"Allow MBs when glucose is below target range" = "Sta MBs toe als de bloedglucose onder het doelbereik ligt";
+
+"Retrospective Correction interval" = "Retrospectieve correctie interval";
