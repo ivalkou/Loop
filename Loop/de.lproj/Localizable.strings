@@ -393,3 +393,78 @@
 /* The label of the workout mode toggle button */
 "Workout Targets" = "Zielbereich für Sport";
 
+// FreeAPS strings
+
+"Microboluses" = "Mikroboli";
+
+"Caution! Microboluses have potential to reduce the safety effects of other mitigations like max temp basal rate. Please be careful!\nThe actual size of a microbolus is always limited to the partial application of recommended bolus." = "Warnung! Mikroboli können die Schutzwirkung von Begrenzungen an anderer Stelle abschwächen, etwa die der gesetzten maximalen temporären Basalrate. Vorsicht! Die tatsächliche Größe eines Bolus bleibt immer begrenzt auf den abzugebenden Anteil des Bolusvorschlags.";
+
+"Enable With Carbs" = "Aktivieren, mit Kohlenhydraten";
+
+"Enable Without Carbs" = "Aktivieren, ohne Kohlenhydrate";
+
+"Partial Bolus Application" = "Anzuwendender Bolus-Anteil";
+
+"What part of the recommended bolus will be applied automatically." = "Der Anteil des empfohlenen Bolus, der automatisch verabreicht wird.";
+
+"Basal Rate Multiplier" = "Basalraten-Multiplikator";
+
+"Max basal limit" = "Maximales Basallimit";
+
+"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting.\nThis setting is ignored if microboluses are disabled." = "Begrenzt die Basalrate auf ein Vielfaches der geplanten Basalrate in Loop. Der Wert kann dabei die maximale Basalrate nicht überschreiten.\nDiese Einstellung wird bei deaktiviertem Mikrobolus ignoriert.";
+
+"Temporary overrides" = "Vorübergehende Anpassungen";
+
+"Disable MB by enabling temporary override" = "Mikrobolus durch vorübergehende Anpassungen deaktivieren";
+
+"If the override's target range starts at the given value or more" = "Wenn der Zielbereich der vorübergehenden Anpassung beim angegebenen Wert oder mehr beginnt";
+
+"Other Options" = "Zusätzliche Einstellungen";
+
+"Open bolus screen after carbs on watch" = "Die Bolus-Anzeige nach Kohlenhydraten auf der Uhr öffnen";
+
+"Minimum Bolus Size" = "Minimaler Bolus";
+
+"Last Event" = "Letztes Ereignis";
+
+"This is the minimum microbolus size in units that will be delivered. Only if the microbolus calculated is equal to or greater than this number of units will a bolus be delivered." = "Dies ist die untere Grenze in IE ab der erst ein Mikrobolus angewendet wird. Nur wenn der berechnete Mikrobolus gleich groß oder größer ist, werden die Bolus IE verabreicht.";
+
+"Disabled" = "Deaktiviert";
+
+"Always" = "Immer";
+
+"With Carbs" = "Mit Kohlenhydraten";
+
+"Without Carbs" = "Ohne Kohlenhydrate";
+
+"Export Settings" = "Einstellungen exportieren";
+
+"Import Settings" = "Einstellungen importieren";
+
+"Manual Temp Basal" = "Eigene temporäre Basalrate";
+
+"Basal rate (U/h)" = "Basalrate (IE/h)";
+
+"Duration" = "Dauer";
+
+"%.0f h %02.0f min" = "%.0f h %02.0f min";
+
+"Cancel Temp Basal" = "Temporäre Basalrate abbrechen";
+
+"Set" = "Einstellen";
+
+"Safety" = "Sicherheit";
+
+"Allow MBs when the sensor value is invalid" = "Erlaube Mikroboli trotz ungültiger Sensordaten";
+
+"Sometimes you may see an exclamation mark next to the glucose value. In such cases microboluses will not be applied. Turn this setting on if you want to ignore warnings." = "Manchmal wird neben dem Glukosewert ein Ausrufezeichen angezeigt. In solchen Fällen wird kein Mikrobolus verabreicht. Aktiviere diese Einstellung, wenn Warnungen ignoriert werden sollen.";
+
+"Other FreeAPS settings" = "Zusätzliche FreeAPS Einstellungen";
+
+"Show required carbs on the app badge" = "Benötigte Kohlenhydrate als Kennzeichen an der App anzeigen";
+
+"Allow MBs when glucose is below target range" = "Erlaube Mikroboli bei Glukose unterhalb des Zielbereichs";
+
+"Retrospective Correction interval" = "Nachträgliches Korrekturintervall";
+
+
