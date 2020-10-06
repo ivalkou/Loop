@@ -1366,7 +1366,10 @@ extension LoopDataManager {
         }
 
         guard let glucose = glucoseStore.latestGlucose,
-            let unit = glucoseStore.preferredUnit else {
+            let predictedGlucose = predictedGlucose,
+            let unit = glucoseStore.preferredUnit,
+            let glucoseTargetRange = settings.glucoseTargetRangeScheduleApplyingOverrideIfActive
+        else {
             completion(.canceled(date: startDate, recommended: insulinReq, reason: "Glucose data not found."), nil)
             return
         }
@@ -1392,6 +1395,18 @@ extension LoopDataManager {
                 completion(.canceled(date: startDate, recommended: insulinReq, reason: "No sensor state found."), nil)
                 return
             }
+        }
+
+        let glucoseBelowRange = predictedGlucose.first { $0.quantity.doubleValue(for: unit) < glucoseTargetRange.value(at: $0.startDate).minValue }
+
+        if !settings.microbolusSettings.allowWhenGlucoseBelowTarget, glucoseBelowRange != nil {
+            let timeFormatter = DateFormatter()
+            timeFormatter.timeStyle = .short
+            completion(.canceled(
+                date: startDate,
+                recommended: insulinReq,
+                reason: "Glucose \(glucoseBelowRange!.quantity) is below target at \(timeFormatter.string(from: glucoseBelowRange!.startDate))"), nil)
+            return
         }
 
         guard checkCOBforMicrobolus() else {
