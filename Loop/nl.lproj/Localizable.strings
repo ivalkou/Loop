@@ -425,6 +425,8 @@
 
 "Minimum Bolus Size" = "Minimale bolus omvang";
 
+"Last Event" = "Laatste gebeurtenis";
+
 "This is the minimum microbolus size in units that will be delivered. Only if the microbolus calculated is equal to or greater than this number of units will a bolus be delivered." = "Dit is de minimale microbolus in eenheden die zal worden toegediend. Alleen als bij de berekende microbolus gelijk of groter is dan dit aantal eenheden, zal een bolus worden toegediend.";
 
 "Disabled" = "Uitgeschakeld";
