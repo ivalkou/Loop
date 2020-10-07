@@ -393,3 +393,78 @@
 /* The label of the workout mode toggle button */
 "Workout Targets" = "Treningsmål";
 
+// FreeAPS strings
+
+"Microboluses" = "Mikroboluser";
+
+"Caution! Microboluses have potential to reduce the safety effects of other mitigations like max temp basal rate. Please be careful!\nThe actual size of a microbolus is always limited to the partial application of recommended bolus." = "Forsiktig! Mikrobolus kan redusere sikkerhetseffekten til andre begrensninger, som maksimal temp basal rate. Vær forsiktig!\nDen faktiske størrelsen på en mikrobolus er alltid begrenset til den innstillingen som er satt for anbefalt microbolus.";
+
+"Enable With Carbs" = "Tillatt med karbo";
+
+"Enable Without Carbs" = "Tillatt uten karbo";
+
+"Partial Bolus Application" = "Andel av anbefalt bolus";
+
+"What part of the recommended bolus will be applied automatically." = "Hvor stor andel av anbefalt bolus skal gis automatisk.";
+
+"Basal Rate Multiplier" = "Basalrate multiplikator";
+
+"Max basal limit" = "Maks basal grense";
+
+"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting.\nThis setting is ignored if microboluses are disabled." = "Bestemmer andel maksimal basal som vil ble brukt til en multiplum av den normale basaldosen. Verdien kan ikke overstige din maksimale basaldose\nDenne innstillingen ignoreres hvis mikroboluser er deaktivert.";
+
+"Temporary overrides" = "Midlertidig overstyring";
+
+"Disable MB by enabling temporary override" = "Deaktiver MB ved å aktivere midlertidig overstyring";
+
+"If the override's target range starts at the given value or more" = "Hvis det midlertidige overstyrings målområde starter på angitt verdi eller mer";
+
+"Other Options" = "Andre innstillinger";
+
+"Open bolus screen after carbs on watch" = "Åpne bolus menyen på klokka etter karbo er satt";
+
+"Minimum Bolus Size" = "Minimum bolus størrelse";
+
+"Last Event" = "Siste hendelse";
+
+"This is the minimum microbolus size in units that will be delivered. Only if the microbolus calculated is equal to or greater than this number of units will a bolus be delivered." = "Dette er den minste mikrobolusen i enheter som kan leveres. Bare hvis mikrobolusen kalkulert er lik, eller større enn dette tallet, vil mikrobolus gis.";
+
+"Disabled" = "Deaktivert";
+
+"Always" = "Alltid";
+
+"With Carbs" = "Med karbo";
+
+"Without Carbs" = "Uten karbo";
+
+"Export Settings" = "Eksportere innstillingene";
+
+"Import Settings" = "Importer innstillinger";
+
+"Manual Temp Basal" = "Manuell midlertidig basal";
+
+"Basal rate (U/h)" = "Basal rate (E/t)";
+
+"Duration" = "Varighet";
+
+"%.0f h %02.0f min" = "%.0f h %02.0f min";
+
+"Cancel Temp Basal" = "Avbryter midlertidig basal";
+
+"Set" = "Sett";
+
+"Safety" = "Sikkerhet";
+
+"Allow MBs when the sensor value is invalid" = "Tillat MB når sensor gir ugyldig verdi";
+
+"Sometimes you may see an exclamation mark next to the glucose value. In such cases microboluses will not be applied. Turn this setting on if you want to ignore warnings." = "Noen ganger kan du se et utropstegn ved glukoseverdien. Ved slike hendelser vil ikke mikrobolus gis. Skru på denne innstillingen, hvis du vil ignorere dette.";
+
+"Other FreeAPS settings" = "Andre FreeAPS innstillinger";
+
+"Show required carbs on the app badge" = "Vis anbefalte karbo på app badgen";
+
+"Allow MBs when glucose is below target range" = "Tillat MB når glukosen er under målområdet";
+
+"Retrospective Correction interval" = "Retrospektiv korreksjons intervall";
+
+
