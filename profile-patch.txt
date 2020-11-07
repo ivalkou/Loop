@@ -1,0 +1,80 @@
+From 06b8a116eb475401c138042fee84ef600800f658 Mon Sep 17 00:00:00 2001
+From: Jon Fawcett <jonfawcett10@gmail.com>
+Date: Thu, 13 Aug 2020 12:48:34 -0400
+Subject: [PATCH] Fix: Upload NS profile only on Basal, ISF, CR change
+
+---
+ Loop/Managers/LoopDataManager.swift       | 13 +++++++++++++
+ Loop/Managers/NightscoutDataManager.swift |  4 ++--
+ 2 files changed, 15 insertions(+), 2 deletions(-)
+
+diff --git a/Loop/Managers/LoopDataManager.swift b/Loop/Managers/LoopDataManager.swift
+index a8496c7d5..f9977fa1e 100644
+--- a/Loop/Managers/LoopDataManager.swift
++++ b/Loop/Managers/LoopDataManager.swift
+@@ -330,6 +330,7 @@ extension LoopDataManager {
+             doseStore.basalProfile = newValue
+             UserDefaults.appGroup?.basalRateSchedule = newValue
+             notify(forChange: .preferences)
++            notifyUpload(forChange: .preferences)
+ 
+             if let newValue = newValue, let oldValue = doseStore.basalProfile, newValue.items != oldValue.items {
+                 AnalyticsManager.shared.didChangeBasalRateSchedule()
+@@ -357,6 +358,7 @@ extension LoopDataManager {
+             carbsOnBoard = nil
+ 
+             notify(forChange: .preferences)
++            notifyUpload(forChange: .preferences)
+         }
+     }
+ 
+@@ -408,6 +410,7 @@ extension LoopDataManager {
+                 self.insulinEffect = nil
+ 
+                 self.notify(forChange: .preferences)
++                self.notifyUpload(forChange: .preferences)
+             }
+         }
+     }
+@@ -859,6 +862,15 @@ extension LoopDataManager {
+             ]
+         )
+     }
++    
++    private func notifyUpload(forChange context: LoopUpdateContext) {
++        NotificationCenter.default.post(name: .LoopDataUpload,
++            object: self,
++            userInfo: [
++                type(of: self).LoopUpdateContextKey: context.rawValue
++            ]
++        )
++    }
+ 
+     /// Computes amount of insulin from boluses that have been issued and not confirmed, and
+     /// remaining insulin delivery from temporary basal rate adjustments above scheduled rate
+@@ -1580,6 +1592,7 @@ extension LoopDataManager {
+ 
+ extension Notification.Name {
+     static let LoopDataUpdated = Notification.Name(rawValue: "com.loopkit.Loop.LoopDataUpdated")
++    static let LoopDataUpload = Notification.Name(rawValue: "com.loopkit.Loop.LoopDataUpload")
+     static let LoopRunning = Notification.Name(rawValue: "com.loopkit.Loop.LoopRunning")
+     static let LoopCompleted = Notification.Name(rawValue: "com.loopkit.Loop.LoopCompleted")
+ }
+diff --git a/Loop/Managers/NightscoutDataManager.swift b/Loop/Managers/NightscoutDataManager.swift
+index e2d020d39..48823116e 100644
+--- a/Loop/Managers/NightscoutDataManager.swift
++++ b/Loop/Managers/NightscoutDataManager.swift
+@@ -35,11 +35,11 @@ final class NightscoutDataManager {
+         self.deviceManager = deviceDataManager
+ 
+         NotificationCenter.default.addObserver(self, selector: #selector(loopCompleted(_:)), name: .LoopCompleted, object: deviceDataManager.loopManager)
+-        NotificationCenter.default.addObserver(self, selector: #selector(loopDataUpdated(_:)), name: .LoopDataUpdated, object: deviceDataManager.loopManager)
++        NotificationCenter.default.addObserver(self, selector: #selector(loopDataUpload(_:)), name: .LoopDataUpload, object: deviceDataManager.loopManager)
+     }
+ 
+ 
+-    @objc func loopDataUpdated(_ note: Notification) {
++    @objc func loopDataUpload(_ note: Notification) {
+         guard
+             let rawContext = note.userInfo?[LoopDataManager.LoopUpdateContextKey] as? LoopDataManager.LoopUpdateContext.RawValue,
+             let context = LoopDataManager.LoopUpdateContext(rawValue: rawContext),
