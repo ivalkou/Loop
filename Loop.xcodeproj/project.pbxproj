@@ -590,6 +590,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1960A98025BB5BA5006F7F7F /* carthage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = carthage.sh; path = "../../../Downloads/Loop-master-3/Scripts/carthage.sh"; sourceTree = "<group>"; };
 		3804343C23747354004BAB52 /* Microbolus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microbolus.swift; sourceTree = "<group>"; };
 		3809602223AA759600F98EE6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		385228E724B3428C00077319 /* BubbleClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BubbleClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1877,6 +1878,7 @@
 			children = (
 				C1D197FE232CF92D0096D646 /* capture-build-details.sh */,
 				C125F31A22FE7CE200FD0545 /* copy-frameworks.sh */,
+				1960A98025BB5BA5006F7F7F /* carthage.sh */,
 				C18A491222FCC22800FDA733 /* build-derived-assets.sh */,
 				C18A491422FCC22900FDA733 /* build-derived-watch-assets.sh */,
 				C18A491522FCC22900FDA733 /* copy-plugins.sh */,
