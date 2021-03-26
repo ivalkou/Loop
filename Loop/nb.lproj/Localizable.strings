@@ -411,7 +411,7 @@
 
 "Max basal limit" = "Maks basalgrense";
 
-"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting.\nThis setting is ignored if microboluses are disabled." = "Begrenser maksimal midlertidig basalrate til et multiplum av programmert basalrate. Verdien kan ikke overstige innstillingen for maksimal basalgrense\nDenne innstillingen ignoreres hvis mikroboluser er deaktivert.";
+"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled." = "Begrenser maksimal midlertidig basalrate til et multiplum av programmert basalrate. Verdien kan ikke overstige innstillingen for maksimal basalgrense\nDenne innstillingen ignoreres hvis mikroboluser er deaktivert.";
 
 "Temporary overrides" = "Midlertidig overstyring";
 

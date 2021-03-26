@@ -411,7 +411,7 @@
 
 "Max basal limit" = "Maximales Basallimit";
 
-"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting.\nThis setting is ignored if microboluses are disabled." = "Begrenzt die Basalrate auf ein Vielfaches der geplanten Basalrate in Loop. Der Wert kann dabei die maximale Basalrate nicht überschreiten.\nDiese Einstellung wird bei deaktiviertem Mikrobolus ignoriert.";
+"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled." = "Begrenzt die Basalrate auf ein Vielfaches der geplanten Basalrate in Loop. Der Wert kann dabei die maximale Basalrate nicht überschreiten.\nDiese Einstellung wird bei deaktiviertem Mikrobolus ignoriert.";
 
 "Temporary overrides" = "Vorübergehende Anpassungen";
 
