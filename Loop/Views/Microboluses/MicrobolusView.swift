@@ -108,7 +108,7 @@ struct MicrobolusView: View {
 
     private var basalRateSection: some View {
         Section(footer:
-            Text("Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled.")
+            Text("Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled.")
         ) {
             Picker(selection: $viewModel.basalRateMultiplierIndex, label: Text("Basal Rate Multiplier")) {
                 ForEach(0 ..< viewModel.basalRateMultiplierValues.count) { index in
