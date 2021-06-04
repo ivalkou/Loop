@@ -590,6 +590,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19F7B9DA266A937E00217628 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		19F7B9DB266A93B300217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Intents.strings; sourceTree = "<group>"; };
+		19F7B9DC266A93B400217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		19F7B9DD266A93B400217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
+		19F7B9DE266A93B400217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		19F7B9DF266A93B400217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Interface.strings; sourceTree = "<group>"; };
+		19F7B9E0266A93B400217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
+		19F7B9E1266A93B400217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		19F7B9E2266A93C200217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19F7B9E3266A93C400217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19F7B9E4266A93C500217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19F7B9E5266A93C600217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/ckcomplication.strings; sourceTree = "<group>"; };
+		19F7B9E6266A93C600217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19F7B9E7266A93C900217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19F7B9E8266A93D200217628 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3804343C23747354004BAB52 /* Microbolus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microbolus.swift; sourceTree = "<group>"; };
 		3809602223AA759600F98EE6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		385228E724B3428C00077319 /* BubbleClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BubbleClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2253,6 +2268,7 @@
 				ru,
 				fi,
 				sv,
+				da,
 			);
 			mainGroup = 43776F831B8022E90074EA36;
 			productRefGroup = 43776F8D1B8022E90074EA36 /* Products */;
@@ -3031,6 +3047,7 @@
 				7D2366D521250D4A0028B67D /* nb */,
 				7D199D93212A067600241026 /* pl */,
 				3885096724F284E00054E2A9 /* sv */,
+				19F7B9DD266A93B400217628 /* da */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -3039,6 +3056,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				43776F9B1B8022E90074EA36 /* Base */,
+				19F7B9DC266A93B400217628 /* da */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -3058,6 +3076,7 @@
 				C12CB9B623106A6200F84978 /* nb */,
 				C12CB9B823106A6300F84978 /* pl */,
 				3885096524F284E00054E2A9 /* sv */,
+				19F7B9DB266A93B300217628 /* da */,
 			);
 			name = Intents.intentdefinition;
 			sourceTree = "<group>";
@@ -3076,6 +3095,7 @@
 				7D2366D721250D4A0028B67D /* nb */,
 				7D199D95212A067600241026 /* pl */,
 				3885096924F284E10054E2A9 /* sv */,
+				19F7B9DF266A93B400217628 /* da */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -3085,6 +3105,7 @@
 			children = (
 				43D9FFA921EA9A0C00AF44BF /* Base */,
 				3885096A24F284E10054E2A9 /* sv */,
+				19F7B9E0266A93B400217628 /* da */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -3094,6 +3115,7 @@
 			children = (
 				43D9FFAE21EA9A0F00AF44BF /* Base */,
 				3885096B24F284E10054E2A9 /* sv */,
+				19F7B9E1266A93B400217628 /* da */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -3112,6 +3134,7 @@
 				7D2366D621250D4A0028B67D /* nb */,
 				7D199D94212A067600241026 /* pl */,
 				3885096824F284E10054E2A9 /* sv */,
+				19F7B9DE266A93B400217628 /* da */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -3154,6 +3177,7 @@
 			children = (
 				7D23668021250CBE0028B67D /* Base */,
 				3885097024F284E80054E2A9 /* sv */,
+				19F7B9E6266A93C600217628 /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -3163,6 +3187,7 @@
 			children = (
 				7D23668121250CC50028B67D /* Base */,
 				3885096F24F284E80054E2A9 /* sv */,
+				19F7B9E5266A93C600217628 /* da */,
 			);
 			name = ckcomplication.strings;
 			sourceTree = "<group>";
@@ -3171,6 +3196,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7D23667A21250C480028B67D /* Base */,
+				19F7B9E3266A93C400217628 /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -3224,6 +3250,7 @@
 				7D2366DA21250D4A0028B67D /* nb */,
 				7D199D98212A067600241026 /* pl */,
 				3885096C24F284E50054E2A9 /* sv */,
+				19F7B9E2266A93C200217628 /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -3276,6 +3303,8 @@
 				7D2366D821250D4A0028B67D /* nb */,
 				7D199D96212A067600241026 /* pl */,
 				3885097224F284F70054E2A9 /* sv */,
+				19F7B9DA266A937E00217628 /* fi */,
+				19F7B9E8266A93D200217628 /* da */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -3285,6 +3314,7 @@
 			children = (
 				80F864E52433BF5D0026EC26 /* fi */,
 				3885097124F284EB0054E2A9 /* sv */,
+				19F7B9E7266A93C900217628 /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -3303,6 +3333,7 @@
 				7D2366DE21250D4B0028B67D /* nb */,
 				7D199D9C212A067700241026 /* pl */,
 				3885096E24F284E70054E2A9 /* sv */,
+				19F7B9E4266A93C500217628 /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
