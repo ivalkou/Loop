@@ -390,7 +390,7 @@
 /* The label of the workout mode toggle button */
 "Workout Targets" = "Workout Targets";
 
-
+/*-----------------------------------------------------------------------------*/
 // FreeAPS strings
 
 "Microboluses" = "Microboluses";
@@ -409,7 +409,7 @@
 
 "Max basal limit" = "Max basal limit";
 
-"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting.\nThis setting is ignored if microboluses are disabled." = "Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting.\nThis setting is ignored if microboluses are disabled.";
+"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled." = "Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled.";
 
 "Temporary overrides" = "Temporary overrides";
 
@@ -422,6 +422,8 @@
 "Open bolus screen after carbs on watch" = "Open bolus screen after carbs on watch";
 
 "Minimum Bolus Size" = "Minimum Bolus Size";
+
+"Last Event" = "Last Event";
 
 "This is the minimum microbolus size in units that will be delivered. Only if the microbolus calculated is equal to or greater than this number of units will a bolus be delivered." = "This is the minimum microbolus size in units that will be delivered. Only if the microbolus calculated is equal to or greater than this number of units will a bolus be delivered.";
 
@@ -462,4 +464,3 @@
 "Allow MBs when glucose is below target range" = "Allow MBs when glucose is below target range";
 
 "Retrospective Correction interval" = "Retrospective Correction interval";
-
