@@ -390,7 +390,7 @@
 /* The label of the workout mode toggle button */
 "Workout Targets" = "Целевые значения при физической нагрузке";
 
-
+/*-----------------------------------------------------------------------------*/
 // FreeAPS strings
 
 "Microboluses" = "Микроболюсы";
@@ -409,7 +409,7 @@
 
 "Max basal limit" = "Максимальная базальная скорость";
 
-"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled." = "Ограничивает максимальную базальную скорость текущей базальной скоростью, уноженной на коэфициент. Полученное значение не будет превышать выставленную максимальную базальную скорость. Настройка игнорируется, если микроболюсы отключены.";
+"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled." = "Ограничивает максимальную базальную скорость текущей базальной скоростью, уноженной на коэфициент. Полученное значение не будет превышать выставленную максимальную базальную скорость. Настройка игнорируется, если микроболюсы отключены.";
 
 "Temporary overrides" = "Временные цели";
 
@@ -422,6 +422,8 @@
 "Open bolus screen after carbs on watch" = "Открывать на часах экран введения болюса после введения углеводов";
 
 "Minimum Bolus Size" = "Минимальный размер болюса";
+
+"Last Event" = "Last Event";
 
 "This is the minimum microbolus size in units that will be delivered. Only if the microbolus calculated is equal to or greater than this number of units will a bolus be delivered." = "Минимальный размер вводимого микроболюса (в единицах). Микроболюс будет введен только в том случае, если его рассчитанная величина будет равна или больше указанного значения минимального болюса.";
 
