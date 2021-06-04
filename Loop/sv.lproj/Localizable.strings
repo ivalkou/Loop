@@ -437,7 +437,7 @@
 
 "Max basal limit" = "Max basaldos";
 
-"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled." = "Bestämmer andel maximal temporär basal som kommer att används till en multipel av den normala basaldosen. Värdet kan inte överskrida din inställda maximala basaldos. Denna inställning används endast när reglaget för automatiska bolusar är på.";
+"Limits the maximum basal rate to a multiple of the scheduled basal rate in loop. The value cannot exceed your maximum basal rate setting. This setting is ignored if microboluses are disabled." = "Begränsar andel maximal temporär basal som kommer att används till en multipel av den normala basaldosen. Värdet kan inte överskrida din inställda maximala basaldos. Denna inställning används endast när reglaget för automatiska bolusar är på.";
 
 "Temporary overrides" = "Tillfälliga undantag";
 
